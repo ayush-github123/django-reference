@@ -1,0 +1,10 @@
+{% extends "main.html" %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <h1 style="text-align:center">Welcome @{{user.username}}</h1>
+    {% else %}
+        <h1 style="text-align:center">Welcome to the Login Page...</h1>
+    {% endif %}
+
+{% endblock %}
